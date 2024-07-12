@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="baslik">s</h1>
+    <h1 id="basliq"></h1>
+
+</body>
+
+<script>
+    const currentdate= new Date();
+    let sonuc= currentdate.valueOf();
+
+var tarix = document.getElementById("baslik");
+
+
+tarix.innerText=sonuc;
+var tarih = document.getElementById("basliq");
+tarih.innerText=JSON.stringify(currentdate,["getHours()"]);
+
+</script>
+</html>
